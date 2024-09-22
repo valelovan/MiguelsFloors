@@ -9,4 +9,5 @@ urlpatterns = [
     
     # Spanish language paths
     path("es", views.index_es, name="index-es"),
+    path("contact/es", views.contact_es, name="contact-es"),
 ]

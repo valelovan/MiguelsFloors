@@ -10,3 +10,6 @@ def index_es(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+def contact_es(request):
+    return render(request, "contact_es.html")

@@ -8,5 +8,5 @@ def index(request):
 def index_es(request):
     return render(request, "index_es.html")
 
-def pricing(request):
-    return render(request, "pricing.html")
+def contact(request):
+    return render(request, "contact.html")

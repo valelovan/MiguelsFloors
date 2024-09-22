@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     # English language paths
     path("", views.index, name="index"),
-    path("pricing", views.pricing, name="pricing"),
+    path("contact", views.contact, name="contact"),
     
     # Spanish language paths
     path("es", views.index_es, name="index-es"),

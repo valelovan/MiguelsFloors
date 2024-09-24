@@ -13,3 +13,9 @@ def contact(request):
 
 def contact_es(request):
     return render(request, "contact_es.html")
+
+def gallery(request):
+    return render(request, "gallery.html")
+
+def gallery_es(request):
+    return render(request, "gallery_es.html")

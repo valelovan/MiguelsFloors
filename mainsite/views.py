@@ -19,3 +19,9 @@ def gallery(request):
 
 def gallery_es(request):
     return render(request, "gallery_es.html")
+
+def about(request):
+    return render(request, "about.html")
+
+def about_es(request):
+    return render(request, "about_es.html")

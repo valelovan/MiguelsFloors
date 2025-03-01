@@ -75,6 +75,12 @@
         .card {
             margin: auto;
         }
+
+        .page-cont {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
     </style>
 </head>
 
@@ -118,33 +124,34 @@
 
 <body>
 
-    <h1>Miguel's Floors: ¡Su experto en pisos de confianza desde 2003!</h1>
+    <div class="page-cont">
+        <h1>Miguel's Floors: ¡Su experto en pisos de confianza desde 2003!</h1>
 
-    <div class="container info">
-        <div class="row g-0">
-            <div class="col-md-8">
+        <div class="container info">
+            <div class="row g-0">
+                <div class="col-md-8">
 
-                <p>&emsp; Con sede en el condado de Prince William, Virginia, Miguel's Floors ha brindado servicios excepcionales de pisos durante más de dos décadas. Si usted es propietario de una vivienda que busca mejorar su espacio o una empresa que busca soluciones de pisos atractivos y duraderos, estamos aquí para ayudarlo. Nuestra amplia gama de servicios está diseñada para realzar tanto la belleza como la funcionalidad de su entorno, garantizando que su piso no solo luzca excelente sino que también resista el paso del tiempo.</p>
-                <p>&emsp; En Miguel's Floors, estamos muy orgullosos de nuestro compromiso de ofrecer resultados de alta calidad y garantizar la satisfacción total del cliente. Cada proyecto, ya sea grande o pequeño, recibe el mismo nivel de cuidado y atención. Nuestro equipo de profesionales capacitados aporta años de experiencia práctica en cada trabajo, desde restaurar el brillo natural de sus pisos de madera hasta un acabado experto, hasta la instalación de pisos de tablones de vinilo de lujo (LVP) que combinan durabilidad con estilo. También nos especializamos en servicios de encuadernación de alfombras, brindándole bordes bellamente terminados que mejoran la apariencia y la longevidad de sus alfombras.</p>
-                <p>&emsp; Además de pisos, ofrecemos servicios de remodelación, brindándote la posibilidad de transformar tu espacio por completo. Nuestras soluciones de remodelación están diseñadas para satisfacer sus necesidades específicas, ya sea que esté actualizando una sola habitación o renovando toda su casa u oficina. Creemos que cada proyecto es un proceso colaborativo y es por eso que trabajamos estrechamente con nuestros clientes de principio a fin, asegurando que el resultado final sea exactamente lo que usted imagina.</p>
-                <p>&emsp; En Miguel's Floors, vemos cada proyecto como más que un simple trabajo, es una oportunidad para hacer realidad su visión única. Nuestra atención al detalle, pasión por los pisos y dedicación a la excelencia nos han convertido en un nombre confiable en nuestra comunidad. A lo largo de los años, nos hemos ganado una reputación no solo por la calidad de la artesanía sino también por el servicio personalizado que brindamos a cada cliente.</p>
-                <p>&emsp; Gracias por considerar Miguel's Floors para su próximo proyecto. Esperamos poder ayudarlo a transformar su espacio con nuestra amplia gama de servicios de remodelación y pisos. Ya sea una simple actualización o una revisión completa, ¡estamos aquí para garantizar su satisfacción en cada paso del camino!</p>
+                    <p>&emsp; Con sede en el condado de Prince William, Virginia, Miguel's Floors ha brindado servicios excepcionales de pisos durante más de dos décadas. Si usted es propietario de una vivienda que busca mejorar su espacio o una empresa que busca soluciones de pisos atractivos y duraderos, estamos aquí para ayudarlo. Nuestra amplia gama de servicios está diseñada para realzar tanto la belleza como la funcionalidad de su entorno, garantizando que su piso no solo luzca excelente sino que también resista el paso del tiempo.</p>
+                    <p>&emsp; En Miguel's Floors, estamos muy orgullosos de nuestro compromiso de ofrecer resultados de alta calidad y garantizar la satisfacción total del cliente. Cada proyecto, ya sea grande o pequeño, recibe el mismo nivel de cuidado y atención. Nuestro equipo de profesionales capacitados aporta años de experiencia práctica en cada trabajo, desde restaurar el brillo natural de sus pisos de madera hasta un acabado experto, hasta la instalación de pisos de tablones de vinilo de lujo (LVP) que combinan durabilidad con estilo. También nos especializamos en servicios de encuadernación de alfombras, brindándole bordes bellamente terminados que mejoran la apariencia y la longevidad de sus alfombras.</p>
+                    <p>&emsp; Además de pisos, ofrecemos servicios de remodelación, brindándote la posibilidad de transformar tu espacio por completo. Nuestras soluciones de remodelación están diseñadas para satisfacer sus necesidades específicas, ya sea que esté actualizando una sola habitación o renovando toda su casa u oficina. Creemos que cada proyecto es un proceso colaborativo y es por eso que trabajamos estrechamente con nuestros clientes de principio a fin, asegurando que el resultado final sea exactamente lo que usted imagina.</p>
+                    <p>&emsp; En Miguel's Floors, vemos cada proyecto como más que un simple trabajo, es una oportunidad para hacer realidad su visión única. Nuestra atención al detalle, pasión por los pisos y dedicación a la excelencia nos han convertido en un nombre confiable en nuestra comunidad. A lo largo de los años, nos hemos ganado una reputación no solo por la calidad de la artesanía sino también por el servicio personalizado que brindamos a cada cliente.</p>
+                    <p>&emsp; Gracias por considerar Miguel's Floors para su próximo proyecto. Esperamos poder ayudarlo a transformar su espacio con nuestra amplia gama de servicios de remodelación y pisos. Ya sea una simple actualización o una revisión completa, ¡estamos aquí para garantizar su satisfacción en cada paso del camino!</p>
 
-            </div>
-            <div class="col-md-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="{% static 'Working_On_Stairs.jpg' %}" alt="Trabajo de preparación para proteger la casa durante un proyecto.">
-                    <div class="card-body">
-                        <p class="card-text">¡Visita nuestra galería para ver más!</p>
-                        <a href="{% url 'gallery-es' %}" class="btn btn-primary">Galería</a>
-                    </div>
                 </div>
+                <div class="col-md-4">
 
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{% static 'Working_On_Stairs.jpg' %}" alt="Trabajo de preparación para proteger la casa durante un proyecto.">
+                        <div class="card-body">
+                            <p class="card-text">¡Visita nuestra galería para ver más!</p>
+                            <a href="{% url 'gallery-es' %}" class="btn btn-primary">Galería</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <div id="nav-div" class="container">

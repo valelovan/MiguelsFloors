@@ -67,6 +67,12 @@
         h1 {
             padding: 50px;
         }
+
+        .page-cont {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
     </style>
 </head>
 
@@ -109,87 +115,89 @@
         </div>
     </nav>
 
-    <h1 style="text-align: center;">Proudly serving Northern Virginia since 2003</h1>
+    <div class="page-cont">
+        <h1 style="text-align: center;">Proudly serving Northern Virginia since 2003</h1>
 
-    <!-- CARDS -->
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-8">
-                
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{% static 'BeforeAndAfter.jpg' %}" class="img-fluid rounded-start prod-img" alt="Before and after picture.">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Flooring Installation</h5>
-                                <p class="card-text">Experience the incredible difference our flooring solutions can make! Whether you're starting with a bare surface or looking to refresh your home, our expert installation brings warmth, style, and functionality to any room. Choose from a wide range of high-quality materials all tailored to suit your unique vision. Ready to elevate your space? Let’s make your dream home a reality!</p>
+        <!-- CARDS -->
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{% static 'BeforeAndAfter.jpg' %}" class="img-fluid rounded-start prod-img" alt="Before and after picture.">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flooring Installation</h5>
+                                    <p class="card-text">Experience the incredible difference our flooring solutions can make! Whether you're starting with a bare surface or looking to refresh your home, our expert installation brings warmth, style, and functionality to any room. Choose from a wide range of high-quality materials all tailored to suit your unique vision. Ready to elevate your space? Let’s make your dream home a reality!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+                <div class="col-md-4">
 
+                </div>
             </div>
-            <div class="col-md-4">
 
+            <div class="row g-0">
+                <div class="col-md-4">
+
+
+                </div>
+                <div class="col-md-8">
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="{% static 'Staircase.jpg' %}" class="img-fluid rounded-start prod-img" alt="Finished staircase with a modern style.">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Home Renovation</h5>
+                                <p class="card-text">Transform your entryway with a beautifully designed modern staircase that combines style and functionality. Our expertly crafted stairs not only enhance the aesthetic appeal of your home but also provide a seamless flow between levels. With sleek lines and premium materials, this staircase is the perfect statement piece for any contemporary space. Ready to elevate your home's design? Let us help you create the staircase of your dreams!</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div class="row g-0">
-            <div class="col-md-4">
 
+        <!-- Yelp Reviews -->
+        <div class="container">
+            <h2>Customer Reviews</h2>
 
+            <div class="yelp-reviews m-4">
+                <span class="yelp-review" data-review-id="O-WnKQyx98FtB37ddT_F_A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=gresqHTS8xNamqSRdON3xw" rel="nofollow noopener">VE C.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=O-WnKQyx98FtB37ddT_F_A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                <span class="yelp-review" data-review-id="5kPZjSkev6V7oneUl2TtGg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=WX9JL4S48kNt2Jnev1tAVQ" rel="nofollow noopener">Christine C.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=5kPZjSkev6V7oneUl2TtGg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
             </div>
-            <div class="col-md-8">
-
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                        <img src="{% static 'Staircase.jpg' %}" class="img-fluid rounded-start prod-img" alt="Finished staircase with a modern style.">
-                        </div>
-                        <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Home Renovation</h5>
-                            <p class="card-text">Transform your entryway with a beautifully designed modern staircase that combines style and functionality. Our expertly crafted stairs not only enhance the aesthetic appeal of your home but also provide a seamless flow between levels. With sleek lines and premium materials, this staircase is the perfect statement piece for any contemporary space. Ready to elevate your home's design? Let us help you create the staircase of your dreams!</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="yelp-reviews m-4">
+                <span class="yelp-review" data-review-id="nBAN7inkQ1RujNmjM_Mxwg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=UUCTYaLqY4KAftEPdvayEw" rel="nofollow noopener">Young K.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=nBAN7inkQ1RujNmjM_Mxwg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+                <span class="yelp-review" data-review-id="eQ22Xs2WDa6PZLtkBiMS4g" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=1zw6t75C4yQur1HKHHUQ9g" rel="nofollow noopener">Misty Z.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=eQ22Xs2WDa6PZLtkBiMS4g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
             </div>
         </div>
     </div>
 
-    <!-- Yelp Reviews -->
-    <div class="container">
-        <h2>Customer Reviews</h2>
+    <!-- Footer -->
+    <div id="nav-div" class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Copyright © 2024 VRL</span>
+            </div>
 
-        <div class="yelp-reviews m-4">
-            <span class="yelp-review" data-review-id="O-WnKQyx98FtB37ddT_F_A" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=gresqHTS8xNamqSRdON3xw" rel="nofollow noopener">VE C.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=O-WnKQyx98FtB37ddT_F_A" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
-            <span class="yelp-review" data-review-id="5kPZjSkev6V7oneUl2TtGg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=WX9JL4S48kNt2Jnev1tAVQ" rel="nofollow noopener">Christine C.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=5kPZjSkev6V7oneUl2TtGg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
-        </div>
-        <div class="yelp-reviews m-4">
-            <span class="yelp-review" data-review-id="nBAN7inkQ1RujNmjM_Mxwg" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=UUCTYaLqY4KAftEPdvayEw" rel="nofollow noopener">Young K.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=nBAN7inkQ1RujNmjM_Mxwg" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
-            <span class="yelp-review" data-review-id="eQ22Xs2WDa6PZLtkBiMS4g" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=1zw6t75C4yQur1HKHHUQ9g" rel="nofollow noopener">Misty Z.</a>'s <a href="https://www.yelp.com/biz/miguels-floors-haymarket-2?hrid=eQ22Xs2WDa6PZLtkBiMS4g" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/sFyA9RhPWbQCOCW2T8_zEw" rel="nofollow noopener">Miguel's Floors</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
-        </div>
-
-
-        <!-- Footer -->
-        <div id="nav-div" class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                    </a>
-                    <span class="mb-3 mb-md-0 text-body-secondary">Copyright © 2024 VRL</span>
-                </div>
-
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/miguelsfloors/"><img src="{% static 'Facebook_Logo_Primary.png' %}" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                </ul>
-            </footer>
-        </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/miguelsfloors/"><img src="{% static 'Facebook_Logo_Primary.png' %}" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+        </footer>
     </div>
 
 

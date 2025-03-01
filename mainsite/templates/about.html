@@ -75,6 +75,12 @@
         .card {
             margin: auto;
         }
+
+        .page-cont {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
     </style>
 </head>
 
@@ -117,34 +123,34 @@
     </nav>
 
 <body>
+    <div class="page-cont">
+        <h1>Miguel's Floors: Your Trusted Flooring Expert Since 2003!</h1>
 
-    <h1>Miguel's Floors: Your Trusted Flooring Expert Since 2003!</h1>
+        <div class="container info">
+            <div class="row g-0">
+                <div class="col-md-8">
 
-    <div class="container info">
-        <div class="row g-0">
-            <div class="col-md-8">
+                    <p>&emsp; Based in Prince William County, Virginia, Miguel's Floors has been providing exceptional flooring services for over two decades. Whether you are a homeowner looking to upgrade your space or a business seeking durable, attractive flooring solutions, we are here to help. Our wide range of services is designed to enhance both the beauty and functionality of your environment, ensuring that your flooring not only looks great but also stands the test of time.</p>
+                    <p>&emsp; At Miguel's Floors, we take immense pride in our commitment to delivering high-quality results and ensuring total customer satisfaction. Every project, whether large or small, receives the same level of care and attention. Our team of skilled professionals brings years of hands-on experience to each job, from restoring the natural luster of your hardwood floors through expert refinishing, to installing luxury vinyl plank (LVP) flooring that combines durability with style. We also specialize in carpet binding services, providing you with beautifully finished edges that enhance the appearance and longevity of your carpets.</p>
+                    <p>&emsp; In addition to flooring, we offer remodeling services, giving you the ability to transform your space completely. Our remodeling solutions are designed to meet your specific needs, whether you're updating a single room or renovating your entire home or office. We believe that every project is a collaborative process, and that's why we work closely with our clients from start to finish, ensuring that the final result is exactly what you envision.</p>
+                    <p>&emsp; At Miguel's Floors, we see each project as more than just a job, it's an opportunity to bring your unique vision to life. Our attention to detail, passion for flooring, and dedication to excellence have made us a trusted name in our community. Over the years, we've built a reputation not just for quality craftsmanship but for the personalized service we provide to every client.</p>
+                    <p>&emsp; Thank you for considering Miguel's Floors for your next project. We look forward to helping you transform your space with our wide range of flooring and remodeling services. Whether it's a simple refresh or a complete overhaul, we are here to ensure your satisfaction every step of the way!</p>
 
-                <p>&emsp; Based in Prince William County, Virginia, Miguel's Floors has been providing exceptional flooring services for over two decades. Whether you are a homeowner looking to upgrade your space or a business seeking durable, attractive flooring solutions, we are here to help. Our wide range of services is designed to enhance both the beauty and functionality of your environment, ensuring that your flooring not only looks great but also stands the test of time.</p>
-                <p>&emsp; At Miguel's Floors, we take immense pride in our commitment to delivering high-quality results and ensuring total customer satisfaction. Every project, whether large or small, receives the same level of care and attention. Our team of skilled professionals brings years of hands-on experience to each job, from restoring the natural luster of your hardwood floors through expert refinishing, to installing luxury vinyl plank (LVP) flooring that combines durability with style. We also specialize in carpet binding services, providing you with beautifully finished edges that enhance the appearance and longevity of your carpets.</p>
-                <p>&emsp; In addition to flooring, we offer remodeling services, giving you the ability to transform your space completely. Our remodeling solutions are designed to meet your specific needs, whether you're updating a single room or renovating your entire home or office. We believe that every project is a collaborative process, and that's why we work closely with our clients from start to finish, ensuring that the final result is exactly what you envision.</p>
-                <p>&emsp; At Miguel's Floors, we see each project as more than just a job, it's an opportunity to bring your unique vision to life. Our attention to detail, passion for flooring, and dedication to excellence have made us a trusted name in our community. Over the years, we've built a reputation not just for quality craftsmanship but for the personalized service we provide to every client.</p>
-                <p>&emsp; Thank you for considering Miguel's Floors for your next project. We look forward to helping you transform your space with our wide range of flooring and remodeling services. Whether it's a simple refresh or a complete overhaul, we are here to ensure your satisfaction every step of the way!</p>
-
-            </div>
-            <div class="col-md-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="{% static 'Working_On_Stairs.jpg' %}" alt="Prep work to protect the house during a project.">
-                    <div class="card-body">
-                        <p class="card-text">Visit our gallery to see more!</p>
-                        <a href="{% url 'gallery' %}" class="btn btn-primary">Gallery</a>
-                    </div>
                 </div>
+                <div class="col-md-4">
 
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="{% static 'Working_On_Stairs.jpg' %}" alt="Prep work to protect the house during a project.">
+                        <div class="card-body">
+                            <p class="card-text">Visit our gallery to see more!</p>
+                            <a href="{% url 'gallery' %}" class="btn btn-primary">Gallery</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <div id="nav-div" class="container">

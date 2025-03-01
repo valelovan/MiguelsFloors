@@ -71,6 +71,12 @@
         td {
             padding: 10px;
         }
+
+        .page-cont {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
     </style>
 </head>
 
@@ -113,102 +119,104 @@
     </nav>
 
 <body>
-    <div class="container">
+    <div class="page-cont">
+        <div class="container">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Card 1 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="{% static 'After_0.jpg' %}" class="card-img-top" alt="LVP flooring installed in a basement.">
-                    <div class="card-body">
-                        <h5 class="card-title">LVP Installation</h5>
-                        <p class="card-text">A luxury vinyl plank (LVP) floor installation features realistic wood-look planks with smooth, seamless craftsmanship. The natural grain and earthy tones create a sleek, modern aesthetic, combining the look of hardwood with enhanced durability.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{% static 'After_0.jpg' %}" class="card-img-top" alt="LVP flooring installed in a basement.">
+                        <div class="card-body">
+                            <h5 class="card-title">LVP Installation</h5>
+                            <p class="card-text">A luxury vinyl plank (LVP) floor installation features realistic wood-look planks with smooth, seamless craftsmanship. The natural grain and earthy tones create a sleek, modern aesthetic, combining the look of hardwood with enhanced durability.</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{% static 'Staircase.jpg' %}" class="card-img-top" alt="Modern staircase in foyer.">
+                        <div class="card-body">
+                            <h5 class="card-title">Staircase Updates</h5>
+                            <p class="card-text">This staircase overhaul features light wood steps and handrails with slim metal bars, creating a modern design that spans two floors. Clean lines and an open layout give the space a fresh, contemporary feel.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="{% static 'carpet_on_stairs.jpg' %}" class="card-img-top" alt="Bound carpet on staircase.">
+                        <div class="card-body">
+                            <h5 class="card-title">Carpet Binding</h5>
+                            <p class="card-text">This carpet binding features neatly stitched borders, giving it a polished, finished look. It wraps securely around the stairs, providing both style and protection, enhancing durability while adding a refined, tailored appearance to the staircase.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="{% static 'black_staircase.jpg' %}" class="card-img-top" alt="Black staircase with accented rails.">
+                        <div class="card-body">
+                            <h5 class="card-title">Staircase Refinish</h5>
+                            <p class="card-text">The black stairs feature sanded steps and railings, giving them a smooth finish. The rich, dark tone of the wood contrasts with the raw texture from sanding, highlighting the craftsmanship. The refinished surface adds a clean, modern touch while preserving the staircase's bold, classic look.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="{% static 'finished_basement_floor.jpg' %}" class="card-img-top" alt="Light wood floor in finished basement.">
+                        <div class="card-body">
+                            <h5 class="card-title">Floor Renovation</h5>
+                            <p class="card-text">A renovated basement where the old carpet has been replaced with sleek luxury vinyl plank (LVP) flooring. The new flooring brightens the space, accentuating the natural light and giving the room a fresh, open feel. The wood-look planks provide a modern, durable upgrade, transforming the basement into a more inviting, low-maintenance area.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="{% static 'dark_flooring.jpg' %}" class="card-img-top" alt="Dark wood flooring connecting living spaces.">
+                        <div class="card-body">
+                            <h5 class="card-title">Floor Refinishing</h5>
+                            <p class="card-text">See this beautifully restored floor that was sanded down, revealing a fresh, like-new appearance. The smooth, refinished surface highlights the natural beauty of the wood, making it look brand new. This simple sanding process offers an inexpensive way to refresh the floor, giving the space a renewed, polished look without the need for a full replacement.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- <div class="col">
+                    <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Card -->
+                <!-- <div class="col">
+                    <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Card -->
+                <!-- <div class="col">
+                    <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div> -->
+
             </div>
-            <!-- Card 2 -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="{% static 'Staircase.jpg' %}" class="card-img-top" alt="Modern staircase in foyer.">
-                    <div class="card-body">
-                        <h5 class="card-title">Staircase Updates</h5>
-                        <p class="card-text">This staircase overhaul features light wood steps and handrails with slim metal bars, creating a modern design that spans two floors. Clean lines and an open layout give the space a fresh, contemporary feel.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col">
-                <div class="card h-100">
-                <img src="{% static 'carpet_on_stairs.jpg' %}" class="card-img-top" alt="Bound carpet on staircase.">
-                    <div class="card-body">
-                        <h5 class="card-title">Carpet Binding</h5>
-                        <p class="card-text">This carpet binding features neatly stitched borders, giving it a polished, finished look. It wraps securely around the stairs, providing both style and protection, enhancing durability while adding a refined, tailored appearance to the staircase.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="col">
-                <div class="card h-100">
-                <img src="{% static 'black_staircase.jpg' %}" class="card-img-top" alt="Black staircase with accented rails.">
-                    <div class="card-body">
-                        <h5 class="card-title">Staircase Refinish</h5>
-                        <p class="card-text">The black stairs feature sanded steps and railings, giving them a smooth finish. The rich, dark tone of the wood contrasts with the raw texture from sanding, highlighting the craftsmanship. The refinished surface adds a clean, modern touch while preserving the staircase's bold, classic look.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="col">
-                <div class="card h-100">
-                <img src="{% static 'finished_basement_floor.jpg' %}" class="card-img-top" alt="Light wood floor in finished basement.">
-                    <div class="card-body">
-                        <h5 class="card-title">Floor Renovation</h5>
-                        <p class="card-text">A renovated basement where the old carpet has been replaced with sleek luxury vinyl plank (LVP) flooring. The new flooring brightens the space, accentuating the natural light and giving the room a fresh, open feel. The wood-look planks provide a modern, durable upgrade, transforming the basement into a more inviting, low-maintenance area.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="col">
-                <div class="card h-100">
-                <img src="{% static 'dark_flooring.jpg' %}" class="card-img-top" alt="Dark wood flooring connecting living spaces.">
-                    <div class="card-body">
-                        <h5 class="card-title">Floor Refinishing</h5>
-                        <p class="card-text">See this beautifully restored floor that was sanded down, revealing a fresh, like-new appearance. The smooth, refinished surface highlights the natural beauty of the wood, making it look brand new. This simple sanding process offers an inexpensive way to refresh the floor, giving the space a renewed, polished look without the need for a full replacement.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- <div class="col">
-                <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Card -->
-            <!-- <div class="col">
-                <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- Card -->
-            <!-- <div class="col">
-                <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div> -->
 
         </div>
-
     </div>
 
     <!-- Footer -->
